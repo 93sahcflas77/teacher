@@ -10,7 +10,7 @@ app.use(express.static(path.join(__dirname, "public")));
 
 
 app.get("/", (req, res) => {
-    res.render("home");
+    res.render("login");
 });
 
 app.get("/about", (req, res) => {
@@ -25,8 +25,8 @@ app.get("/courses", (req, res) => {
     res.render("courses");
 });
 
-app.get("/login", (req, res) => {
-    res.render("login");
+app.get("/home", (req, res) => {
+    res.render("home");
 });
 
 app.get("/playlist", (req, res) => {
